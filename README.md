@@ -75,12 +75,12 @@
 				  collapsed:: true
 					- The matrix
 					    
-$$K=\begin{bmatrix}542.780305 & 0 & 320.435741\\ 0 & 543.118664 & 236.983275\\ 0 & 0 & 1\end{bmatrix}$$ 					    
-					  contains intrinsic parameters like focal length (first and second elements on the diagonal) and the optical center (third element of the first two rows) of the camera. These parameters are used to convert 3D camera coordinates to 2D image coordinates.  
+$$\`K=\begin{bmatrix}542.780305 & 0 & 320.435741\\ 0 & 543.118664 & 236.983275\\ 0 & 0 & 1\end{bmatrix}`$$
+					  contains intrinsic parameters like focal length (first and second elements on the diagonal) and the optical center (third element of the first two rows) of the camera. These parameters are used to convert 3D camera coordinates to 2D image coordinates.
 				- **R (Rectification Matrix):**
 					- The matrix
 					    
-$$R=\begin{bmatrix}1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\end{bmatrix}$$ 					    
+$$R=\begin{bmatrix}1 & 0 & 0\\ 0 & 1 & 0\\ 0 & 0 & 1\end{bmatrix}$$
 					  is an identity matrix here, indicating that no rectification transformation (rotation) is needed for the stereo setup.  
 					- This 3x3 identity matrix is used for stereo camera systems to align the left and right camera images.
 					- In this case, it indicates no rectification transformation (identity matrix).
