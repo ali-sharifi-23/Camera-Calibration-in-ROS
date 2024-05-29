@@ -85,7 +85,6 @@
 					- This 3x3 identity matrix is used for stereo camera systems to align the left and right camera images.
 					- In this case, it indicates no rectification transformation (identity matrix).
 				- **P (Projection Matrix):**
-				  collapsed:: true
 					- The matrix
 					    
 						$$P=\begin{bmatrix}534.141602 & 0 & 318.174635 & 0\\ 0 & 535.602661 & 236.159328 & 0\\ 0 & 0 & 1 & 0\end{bmatrix}$$ 					    
@@ -100,7 +99,6 @@
 					- `rosrun cv_camera cv_camera_node _device_id:=3 _frame_id:=right_camera __name:=right_camera`
 			- **Step 3:** Run the camera calibration tool
 				- `rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.024 right:=/right_camera/image_raw left:=/left_camera/image_raw right_camera:=/right_camera left_camera:=/left_camera`
-			- ![image.png](../assets/image_1716122106086_0.png)
 	- Errors
 		- **error 1:** camera calibration window does not open up (without any error)
 			- **Troubleshooting:** opencv version 4.2.0 should be installed using conda
