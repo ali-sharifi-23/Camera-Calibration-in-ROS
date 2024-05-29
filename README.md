@@ -2,6 +2,8 @@
 - **Prerequisites**
 	- ROS:
 		- https://wiki.ros.org/ROS/Installation
+	- Camera Calibration ROS Package:
+		- `sudo apt install ros-<ros1-distro>-camera-calibration`
 	- Python: Python version 3.8 should be installed in a new environment in conda
 		- `conda create --name myenv python=3.8`
 		- `conda activate myenv`
