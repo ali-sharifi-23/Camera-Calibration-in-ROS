@@ -75,7 +75,7 @@
 				  collapsed:: true
 					- The matrix
 					    
-```mathK=\begin{bmatrix}542.780305 & 0 & 320.435741\\ 0 & 543.118664 & 236.983275\\ 0 & 0 & 1\end{bmatrix}```
+						$$K=\begin{bmatrix}542.780305 & 0 & 320.435741\\ 0 & 543.118664 & 236.983275\\ 0 & 0 & 1\end{bmatrix}$$
 					  contains intrinsic parameters like focal length (first and second elements on the diagonal) and the optical center (third element of the first two rows) of the camera. These parameters are used to convert 3D camera coordinates to 2D image coordinates.
 				- **R (Rectification Matrix):**
 					- The matrix
