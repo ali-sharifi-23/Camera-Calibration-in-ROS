@@ -10,7 +10,6 @@
 		- `python --version`
 	- OpenCV: opencv version 4.2.0 should be installed on the created conda environment using conda command
 		- `conda install -c conda-forge opencv=4.2.0`
-	- Camera Calibration ROS Package:
 - **Calibration Procedure**
 	- Monocular
 		- **Step 1:** Open terminal and run ROS core
