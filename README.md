@@ -1,7 +1,6 @@
 # Camera-Calibration-in-ROS
 - Prerequisites
 	- **Python:** Python version 3.8 should be installed in a new environment in conda
-	  collapsed:: true
 		- `conda create --name myenv python=3.8`
 		- `conda activate myenv`
 		- `python --version`
