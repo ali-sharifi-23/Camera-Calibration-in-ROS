@@ -28,8 +28,3 @@
 			- `rosrun cv_camera cv_camera_node _device_id:=3 _frame_id:=right_camera __name:=right_camera`
 	- Step 3: Run the camera calibration tool
 		- `rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.024 right:=/right_camera/image_raw left:=/left_camera/image_raw right_camera:=/right_camera left_camera:=/left_camera`
-## Errors
-- Error 1: camera calibration window does not open up (without any error)
-	- Troubleshooting: opencv version 4.2.0 should be installed using conda
-	  `conda install -c conda-forge opencv=4.2.0`
-
