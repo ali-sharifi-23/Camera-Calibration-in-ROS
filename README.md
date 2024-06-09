@@ -17,7 +17,7 @@
 	- Step 2: Open another terminal and start camera node
 		- `rosrun cv_camera cv_camera_node`
 	- Step 3: Run the camera calibration tool
-		- `rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024 image:=/cv_camera/image_raw camera:=/cv_camera`
+		- `rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.03 image:=/cv_camera/image_raw camera:=/cv_camera`
 - Stereo
 	- Step 1: Open terminal and run ROS core
 		- `roscore`
@@ -27,4 +27,4 @@
 		- Terminal 2: Start right camera node
 			- `rosrun cv_camera cv_camera_node _device_id:=3 _frame_id:=right_camera __name:=right_camera`
 	- Step 3: Run the camera calibration tool
-		- `rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.024 right:=/right_camera/image_raw left:=/left_camera/image_raw right_camera:=/right_camera left_camera:=/left_camera`
+		- `rosrun camera_calibration cameracalibrator.py --approximate 0.1 --size 8x6 --square 0.03 right:=/right_camera/image_raw left:=/left_camera/image_raw right_camera:=/right_camera left_camera:=/left_camera`
